@@ -36,8 +36,8 @@ public:
     DerivedGraph& operator++();
     DerivedGraph operator++(int);
     DerivedGraph operator+(const DerivedGraph&) const;
-    DerivedGraph operator[](int DerivedGraph&);
-    DerivedGraph operator()(
+    Vertex operator[](int );
+    //DerivedGraph operator();
     friend ostream& operator<<(ostream&, DerivedGraph&);
 };
     

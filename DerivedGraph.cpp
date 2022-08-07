@@ -225,8 +225,12 @@ DerivedGraph DerivedGraph::operator+(const DerivedGraph& G) const {
 }
 
 // this overloads the [] operator to return the vertex at its position or update the position
-DerivedGraph DerivedGraph::operator[](int DerivedGraph& index) {
-    
+Vertex DerivedGraph::operator[](int index) {
+	if(index<0||index>numVert){
+		cout<<"Error: Vertex "<<index<<" is out of rance"<<endl;
+		exit(1);
+	}
+    return N[index];
     
 }
 
